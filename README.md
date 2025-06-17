@@ -19,14 +19,28 @@ A secure backend API for **Multi-Factor Authentication (MFA)** using **Node.js**
 
 mfa-auth-backend/
 │
-├── config/ # Database connection
-├── controllers/ # Auth logic
-├── models/ # Mongoose models
-├── routes/ # API routes
-├── utils/ # OTP generator, email sender
-├── .env # Environment variables
-├── app.js # Entry point
-└── README.md # You are here!
+├── app.js
+├── .env
+├── package.json
+│
+├── config/
+│   └── db.js
+│
+├── controllers/
+│   └── authController.js
+│
+├── models/
+│   └── User.js
+│
+├── routes/
+│   └── authRoutes.js
+│
+├── utils/
+│   ├── otpGenerator.js
+│   └── sendMail.js
+│
+└── README.md
+
 
 
 ---
@@ -62,10 +76,11 @@ mfa-auth-backend/
 ---
 
 ## 🛠️ Installation
+
     ```bash
-    git clone https://github.com/your-username/mfa-auth-backend.git
-    cd mfa-auth-backend
-    npm install
+        git clone https://github.com/your-username/mfa-auth-backend.git
+        cd mfa-auth-backend
+        npm install
 
 
 **📄 Environment Variables (.env)**
@@ -83,5 +98,6 @@ mfa-auth-backend/
 3. Verify OTP with /api/auth/verify-otp
 
 **⭐ Star this repository**
+
 If you found this useful, please ⭐ the repo and share it. It helps more developers find it and keeps the project active!
 
