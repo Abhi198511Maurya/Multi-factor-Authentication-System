@@ -15,36 +15,6 @@ A secure backend API for **Multi-Factor Authentication (MFA)** using **Node.js**
 
 ---
 
-## 📁 Project Structure
-
-mfa-auth-backend/
-│
-├── app.js
-├── .env
-├── package.json
-│
-├── config/
-│   └── db.js
-│
-├── controllers/
-│   └── authController.js
-│
-├── models/
-│   └── User.js
-│
-├── routes/
-│   └── authRoutes.js
-│
-├── utils/
-│   ├── otpGenerator.js
-│   └── sendMail.js
-│
-└── README.md
-
-
-
----
-
 ## 🔧 Tech Stack
 
 - **Node.js**
